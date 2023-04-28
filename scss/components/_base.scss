@@ -6,7 +6,92 @@ html {
     box-sizing: border-box;
 };
 
-body {
+.body {
     margin: 0 auto;
+    
+}
+
+
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    width: 70rem;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    // height: 40px;
+    margin-bottom: 10px;
+    // clear: both;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.2rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #fff;
+    border-radius: 0.3rem;
+    background-color: rgb(116, 114, 114);        
+}
+
+.key-fun {
+    background-color: #444444;
+    color:#ddd6d6;
+}
+
+.sup {
+    font-size: 12px;
+    right: 2rem;
+    bottom: 1rem;
+    position: relative;
+}
+// .klaviatura .key:hover{
+//     background: ;
+// }
+
+.backspace,
+.shift-left,
+.capslock {
+    width: 10rem;
+}
+
+.shift-right {
+    width: 4rem;
+}
+
+.tab {
+    width: 6rem;
+}
+
+.ctrl {
+    width: 6rem;
+}
+
+.enter {
+    width: 8rem;
+}
+
+.space {
+    width: 28rem;
+}
+
+#screen{
+    width: 68rem;
+    height: 20rem;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
 }
 
