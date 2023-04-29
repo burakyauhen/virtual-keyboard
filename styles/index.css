@@ -208,7 +208,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 0.2rem;
   width: 4rem;
   height: 4rem;
   cursor: pointer;
@@ -218,26 +217,24 @@ html {
   background-color: rgb(116, 114, 114);
 }
 
+.key:hover {
+  background-color: #496855;
+}
+
+.key_active {
+  border-radius: 2rem;
+  background-color: #4deb89;
+}
+
 .key-fun {
   background-color: #444444;
   color: #ddd6d6;
-}
-
-.sup {
-  font-size: 12px;
-  right: 2rem;
-  bottom: 1rem;
-  position: relative;
 }
 
 .backspace,
 .shift-left,
 .capslock {
   width: 10rem;
-}
-
-.shift-right {
-  width: 4rem;
 }
 
 .tab {
@@ -257,7 +254,7 @@ html {
 }
 
 #screen {
-  width: 68rem;
+  width: 70rem;
   height: 20rem;
   margin: 0 auto;
   display: block;
