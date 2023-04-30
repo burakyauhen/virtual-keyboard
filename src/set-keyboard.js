@@ -1,6 +1,6 @@
 /* global keys */
 
-let language = 'ru';
+let language = 'en';
 let keySymbol = 0;
 let shift = false;
 let capsLock = false;
@@ -55,6 +55,23 @@ function feelKeyboard() {
     }
   }
 }
+
+function setLocalStoragelanguage() {
+  localStorage.setItem('language', [language]);
+}
+
+function getLocalStoragelanguage() {
+  if (localStorage.getItem('language')) {
+    language = localStorage.getItem('language');
+    chooseSymbolColumn();
+    feelKeyboard(keys);
+  } else {
+    language = 'en';
+  }
+}
+
+window.addEventListener('load', getLocalStoragelanguage);
+window.addEventListener('beforeunload', setLocalStoragelanguage);
 
 feelKeyboard(keys);
 
