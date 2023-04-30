@@ -1,194 +1,194 @@
 const keys = [
   [{
-    keyCode: 'Backquote', en: '`', enS: '~', enC: '`', ru: 'ё', ruS: 'Ё', ruC: 'Ё', structure: '<div class="key key-fun"></div>',
+    position: 0, type: 'not-functional', keyCode: 'Backquote', en: ['`', '~', '`', '~'], ru: ['ё', 'Ё', 'Ё', 'ё'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit1', en: '1', enS: '!', enC: '`', ru: '1', ruS: '!', ruC: '1', structure: '<div class="key"></div>',
+    position: 1, type: 'not-functional', keyCode: 'Digit1', en: ['1', '!', '1', '!'], ru: ['1', '!', '1', '!'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit2', en: '2', enS: '@', enC: '2', ru: '2', ruS: '"', ruC: '2', structure: '<div class="key"></div>',
+    position: 2, type: 'not-functional', keyCode: 'Digit2', en: ['2', '@', '2', '@'], ru: ['2', '"', '2', '"'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit3', en: '3', enS: '#', enC: '3', ru: '3', ruS: '№', ruC: '3', structure: '<div class="key"></div>',
+    position: 3, type: 'not-functional', keyCode: 'Digit3', en: ['3', '#', '3', '#'], ru: ['3', '№', '3', '№'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit4', en: '4', enS: '$', enC: '4', ru: '4', ruS: ';', ruC: '4', structure: '<div class="key"></div>',
+    position: 4, type: 'not-functional', keyCode: 'Digit4', en: ['4', '$', '4', '$'], ru: ['4', ';', '4', ';'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit5', en: '5', enS: '%', enC: '5', ru: '%', ruS: '5', ruC: '5', structure: '<div class="key"></div>',
+    position: 5, type: 'not-functional', keyCode: 'Digit5', en: ['5', '%', '5', '%'], ru: ['5', '%', '5', '%'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit6', en: '6', enS: '^', enC: '`', ru: '6', ruS: ':', ruC: '6', structure: '<div class="key"></div>',
+    position: 6, type: 'not-functional', keyCode: 'Digit6', en: ['6', '^', '6', '^'], ru: ['6', ':', '6', ':'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit7', en: '7', enS: '&', enC: '7', ru: '7', ruS: '?', ruC: '7', structure: '<div class="key"></div>',
+    position: 7, type: 'not-functional', keyCode: 'Digit7', en: ['7', '&', '7', '&'], ru: ['7', '?', '7', '?'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit8', en: '8', enS: '*', enC: '8', ru: '8', ruS: '*', ruC: '8', structure: '<div class="key"></div>',
+    position: 8, type: 'not-functional', keyCode: 'Digit8', en: ['8', '*', '8', '*'], ru: ['8', '*', '8', '*'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit9', en: '9', enS: '(', enC: '9', ru: '9', ruS: '(', ruC: '9', structure: '<div class="key"></div>',
+    position: 9, type: 'not-functional', keyCode: 'Digit9', en: ['9', '(', '9', '('], ru: ['9', '(', '9', '('], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Digit0', en: '0', enS: ')', enC: '0', ru: '0', ruS: ')', ruC: '0', structure: '<div class="key"></div>',
+    position: 10, type: 'not-functional', keyCode: 'Digit0', en: ['0', ')', '0', ')'], ru: ['0', ')', '0', ')'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Minus', en: '-', enS: '_', enC: '-', ru: '-', ruS: '_', ruC: '-', structure: '<div class="key"></div>',
+    position: 11, type: 'not-functional', keyCode: 'Minus', en: ['-', '_', '-', '_'], ru: ['-', '_', '-', '_'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Equal', en: '=', enS: '+', enC: '=', ru: '=', ruS: '+', ruC: '=', structure: '<div class="key"></div>',
+    position: 12, type: 'not-functional', keyCode: 'Equal', en: ['=', '+', '=', '+'], ru: ['=', '+', '=', '+'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Backspace', en: 'Backspace', enS: 'Backspace', enC: 'Backspace', ru: 'Backspace', ruS: 'Backspace', ruC: 'Backspace', structure: '<div class="key key-fun backspace"></div>',
+    position: 13, type: 'functional', keyCode: 'Backspace', name: 'Backspace', structure: '<div class="key key-fun backspace"></div>',
   }],
   [{
-    keyCode: 'Tab', en: 'Tab', enS: 'Tab', enC: '`', ru: 'Tab', ruS: 'Tab', ruC: 'Tab', structure: '<div class="key key-fun"></div>',
+    position: 14, type: 'functional', keyCode: 'Tab', name: 'Tab', structure: '<div class="key key-fun"></div>',
   },
   {
-    keyCode: 'KeyQ', en: 'q', enS: 'Q', enC: 'Q', ru: 'й', ruS: 'Й', ruC: 'Й', structure: '<div class="key"></div>',
+    position: 15, type: 'not-functional', keyCode: 'KeyQ', en: ['q', 'Q', 'Q', 'q'], ru: ['й', 'Й', 'Й', 'й'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyW', en: 'w', enS: 'W', enC: 'W', ru: 'ц', ruS: 'Ц', ruC: 'Ц', structure: '<div class="key"></div>',
+    position: 16, type: 'not-functional', keyCode: 'KeyW', en: ['w', 'W', 'W', 'w'], ru: ['ц', 'Ц', 'Ц', 'ц'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyE', en: 'e', enS: 'E', enC: 'E', ru: 'у', ruS: 'У', ruC: 'У', structure: '<div class="key"></div>',
+    position: 17, type: 'not-functional', keyCode: 'KeyE', en: ['e', 'E', 'E', 'e'], ru: ['у', 'У', 'У', 'у'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyR', en: 'r', enS: 'R', enC: 'R', ru: 'к', ruS: 'К', ruC: 'К', structure: '<div class="key"></div>',
+    position: 18, type: 'not-functional', keyCode: 'KeyR', en: ['r', 'R', 'R', 'r'], ru: ['к', 'К', 'К', 'к'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyT', en: 't', enS: 'T', enC: 'T', ru: 'е', ruS: 'Е', ruC: 'Е', structure: '<div class="key"></div>',
+    position: 19, type: 'not-functional', keyCode: 'KeyT', en: ['t', 'T', 'T', 't'], ru: ['е', 'Е', 'Е', 'е'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyY', en: 'y', enS: 'Y', enC: 'Y', ru: 'н', ruS: 'Н', ruC: 'Н', structure: '<div class="key"></div>',
+    position: 20, type: 'not-functional', keyCode: 'KeyY', en: ['y', 'Y', 'Y', 'y'], ru: ['н', 'Н', 'Н', 'н'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyU', en: 'u', enS: 'U', enC: 'U', ru: 'г', ruS: 'Г', ruC: 'Г', structure: '<div class="key"></div>',
+    position: 21, type: 'not-functional', keyCode: 'KeyU', en: ['u', 'U', 'U', 'u'], ru: ['г', 'Г', 'Г', 'г'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyI', en: 'i', enS: 'I', enC: 'I', ru: 'ш', ruS: 'Ш', ruC: 'Ш', structure: '<div class="key"></div>',
+    position: 22, type: 'not-functional', keyCode: 'KeyI', en: ['i', 'I', 'I', 'i'], ru: ['ш', 'Ш', 'Ш', 'ш'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyO', en: 'o', enS: 'O', enC: 'O', ru: 'щ', ruS: 'Щ', ruC: 'Щ', structure: '<div class="key"></div>',
+    position: 23, type: 'not-functional', keyCode: 'KeyO', en: ['o', 'O', 'O', 'o'], ru: ['щ', 'Щ', 'Щ', 'щ'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyP', en: 'p', enS: 'P', enC: 'P', ru: 'з', ruS: 'З', ruC: 'З', structure: '<div class="key"></div>',
+    position: 24, type: 'not-functional', keyCode: 'KeyP', en: ['p', 'P', 'P', 'p'], ru: ['з', 'З', 'З', 'з'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'BracketLeft', en: '[', enS: '{', enC: '[', ru: 'х', ruS: 'Х', ruC: 'Х', structure: '<div class="key"></div>',
+    position: 25, type: 'not-functional', keyCode: 'BracketLeft', en: ['[', '{', '[', '{'], ru: ['х', 'Х', 'Х', 'х'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'BracketRight', en: ']', enS: '}', enC: ']', ru: 'ъ', ruS: 'Ъ', ruC: 'Ъ', structure: '<div class="key"></div>',
+    position: 26, type: 'not-functional', keyCode: 'BracketRight', en: [']', '}', ']', '}'], ru: ['ъ', 'Ъ', 'Ъ', 'ъ'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Backslash', en: '\\', enS: '|', enC: '\\', ru: '\\', ruS: '/', ruC: '\\', structure: '<div class="key"></div>',
+    position: 27, type: 'not-functional', keyCode: 'Backslash', en: ['\\', '|', '\\', '|'], ru: ['\\', '/', '\\', '/'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Delete', en: 'Del', enS: 'Del', enC: 'Del', ru: 'Del', ruS: 'Del', ruC: 'Del', structure: '<div class="key key-fun"></div>',
+    position: 28, type: 'functional', keyCode: 'Delete', name: 'Del', structure: '<div class="key key-fun"></div>',
   }],
   [{
-    keyCode: 'CapsLock', en: 'Caps lock', enS: 'Caps lock', enC: 'Caps lock', ru: 'Caps lock', ruS: 'Caps lock', ruC: 'Caps lock', structure: '<div class="key key-fun capslock"></div>',
+    position: 29, type: 'functional', keyCode: 'CapsLock', name: 'Caps lock', structure: '<div class="key key-fun capslock"></div>',
   },
   {
-    keyCode: 'KeyA', en: 'a', enS: 'A', enC: 'A', ru: 'ф', ruS: 'Ф', ruC: 'Ф', structure: '<div class="key"></div>',
+    position: 30, type: 'not-functional', keyCode: 'KeyA', en: ['a', 'A', 'A', 'a'], ru: ['ф', 'Ф', 'Ф', 'ф'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyS', en: 's', enS: 'S', enC: 'S', ru: 'ы', ruS: 'Ы', ruC: 'Ы', structure: '<div class="key"></div>',
+    position: 31, type: 'not-functional', keyCode: 'KeyS', en: ['s', 'S', 'S', 's'], ru: ['ы', 'Ы', 'Ы', 'ы'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyD', en: 'd', enS: 'D', enC: 'D', ru: 'в', ruS: 'В', ruC: 'В', structure: '<div class="key"></div>',
+    position: 32, type: 'not-functional', keyCode: 'KeyD', en: ['d', 'D', 'D', 'd'], ru: ['в', 'В', 'В', 'в'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyF', en: 'f', enS: 'F', enC: 'F', ru: 'а', ruS: 'А', ruC: 'А', structure: '<div class="key"></div>',
+    position: 33, type: 'not-functional', keyCode: 'KeyF', en: ['f', 'F', 'F', 'f'], ru: ['а', 'А', 'А', 'а'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyG', en: 'g', enS: 'G', enC: 'G', ru: 'п', ruS: 'П', ruC: 'П', structure: '<div class="key"></div>',
+    position: 34, type: 'not-functional', keyCode: 'KeyG', en: ['g', 'G', 'G', 'g'], ru: ['п', 'П', 'П', 'п'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyH', en: 'h', enS: 'H', enC: 'H', ru: 'р', ruS: 'Р', ruC: 'Р', structure: '<div class="key"></div>',
+    position: 35, type: 'not-functional', keyCode: 'KeyH', en: ['h', 'H', 'H', 'h'], ru: ['р', 'Р', 'Р', 'р'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyJ', en: 'j', enS: 'J', enC: 'J', ru: 'о', ruS: 'О', ruC: 'О', structure: '<div class="key"></div>',
+    position: 36, type: 'not-functional', keyCode: 'KeyJ', en: ['j', 'J', 'J', 'j'], ru: ['о', 'О', 'О', 'о'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyK', en: 'k', enS: 'K', enC: 'K', ru: 'л', ruS: 'Л', ruC: 'Л', structure: '<div class="key"></div>',
+    position: 37, type: 'not-functional', keyCode: 'KeyK', en: ['k', 'K', 'K', 'k'], ru: ['л', 'Л', 'Л', 'л'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyL', en: 'l', enS: 'L', enC: 'L', ru: 'д', ruS: 'Д', ruC: 'Д', structure: '<div class="key"></div>',
+    position: 38, type: 'not-functional', keyCode: 'KeyL', en: ['l', 'L', 'L', 'l'], ru: ['д', 'Д', 'Д', 'д'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Semicolon', en: ';', enS: ':', enC: ';', ru: 'ж', ruS: 'Ж', ruC: 'Ж', structure: '<div class="key"></div>',
+    position: 39, type: 'not-functional', keyCode: 'Semicolon', en: [';', ':', ';', ':'], ru: ['ж', 'Ж', 'Ж', 'ж'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Quote', en: '\'', enS: '"', enC: '\'', ru: 'э', ruS: 'Э', ruC: 'Э', structure: '<div class="key"></div>',
+    position: 40, type: 'not-functional', keyCode: 'Quote', en: ['\'', '"', '\'', '"'], ru: ['э', 'Э', 'Э', 'э'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Enter', en: 'Enter', enS: 'Enter', enC: 'Enter', ru: 'Enter', ruS: 'Enter', ruC: 'Enter', structure: '<div class="key key-fun enter"></div>',
+    position: 41, type: 'functional', keyCode: 'Enter', name: 'Enter', structure: '<div class="key key-fun enter"></div>',
   }],
   [{
-    keyCode: 'ShiftLeft', en: 'Shift', enS: 'Shift', enC: 'Shift', ru: 'Shift', ruS: 'Shift', ruC: 'Shift', structure: '<div class="key key-fun shift-left"></div>',
+    position: 42, type: 'functional', keyCode: 'ShiftLeft', name: 'Shift', structure: '<div class="key key-fun shift-left"></div>',
   },
   {
-    keyCode: 'KeyZ', en: 'z', enS: 'Z', enC: 'Z', ru: 'я', ruS: 'Я', ruC: 'Я', structure: '<div class="key"></div>',
+    position: 43, type: 'not-functional', keyCode: 'KeyZ', en: ['z', 'Z', 'Z', 'z'], ru: ['я', 'Я', 'Я', 'я'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyX', en: 'x', enS: 'X', enC: 'X', ru: 'ч', ruS: 'Ч', ruC: 'Ч', structure: '<div class="key"></div>',
+    position: 44, type: 'not-functional', keyCode: 'KeyX', en: ['x', 'X', 'X', 'x'], ru: ['ч', 'Ч', 'Ч', 'ч'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyC', en: 'c', enS: 'C', enC: 'C', ru: 'с', ruS: 'С', ruC: 'С', structure: '<div class="key"></div>',
+    position: 45, type: 'not-functional', keyCode: 'KeyC', en: ['c', 'C', 'C', 'c'], ru: ['с', 'С', 'С', 'с'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyV', en: 'v', enS: 'V', enC: 'V', ru: 'м', ruS: 'М', ruC: 'М', structure: '<div class="key"></div>',
+    position: 46, type: 'not-functional', keyCode: 'KeyV', en: ['v', 'V', 'V', 'v'], ru: ['м', 'М', 'М', 'м'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyB', en: 'b', enS: 'B', enC: 'B', ru: 'и', ruS: 'И', ruC: 'И', structure: '<div class="key"></div>',
+    position: 47, type: 'not-functional', keyCode: 'KeyB', en: ['b', 'B', 'B', 'b'], ru: ['и', 'И', 'И', 'и'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyN', en: 'n', enS: 'N', enC: 'N', ru: 'т', ruS: 'Т', ruC: 'Т', structure: '<div class="key"></div>',
+    position: 48, type: 'not-functional', keyCode: 'KeyN', en: ['n', 'N', 'N', 'n'], ru: ['т', 'Т', 'Т', 'т'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'KeyM', en: 'm', enS: 'M', enC: 'M', ru: 'ь', ruS: 'Ь', ruC: 'Ь', structure: '<div class="key"></div>',
+    position: 49, type: 'not-functional', keyCode: 'KeyM', en: ['m', 'M', 'M', 'm'], ru: ['ь', 'Ь', 'Ь', 'ь'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Comma', en: ',', enS: '<', enC: ',', ru: 'б', ruS: 'Б', ruC: 'Б', structure: '<div class="key"></div>',
+    position: 50, type: 'not-functional', keyCode: 'Comma', en: [',', '<', ',', '<'], ru: ['б', 'Б', 'Б', 'б'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Period', en: '.', enS: '>', enC: '.', ru: 'ю', ruS: 'Ю', ruC: 'Ю', structure: '<div class="key"></div>',
+    position: 51, type: 'not-functional', keyCode: 'Period', en: ['.', '>', '.', '>'], ru: ['ю', 'Ю', 'Ю', 'ю'], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'Slash', en: '/', enS: '?', enC: '/', ru: '.', ruS: ',', ruC: '.', structure: '<div class="key"></div>',
+    position: 52, type: 'not-functional', keyCode: 'Slash', en: ['/', '?', '/', '?'], ru: ['.', ',', '.', ','], structure: '<div class="key"></div>',
   },
   {
-    keyCode: 'ArrowUp', en: '&#9650', enS: '&#9650', enC: '&#9650', ru: '&#9650', ruS: '&#9650', ruC: '&#9650', structure: '<div class="key key-fun"></div>',
+    position: 53, type: 'functional', keyCode: 'ArrowUp', name: '&#9650', structure: '<div class="key key-fun"></div>',
   },
   {
-    keyCode: 'ShiftRight', en: 'Shift', enS: 'Shift', enC: 'Shift', ru: 'Shift', ruS: 'Shift', ruC: 'Shift', structure: '<div class="key key-fun shift-right"></div>',
+    position: 54, type: 'functional', keyCode: 'ShiftRight', name: 'Shift', structure: '<div class="key key-fun shift-right"></div>',
   }],
   [{
-    keyCode: 'ControlLeft', en: 'Ctrl', enS: 'Ctrl', enC: 'Ctrl', ru: 'Ctrl', ruS: 'Ctrl', ruC: 'Ctrl', structure: '<div class="key key-fun ctrl"></div>',
+    position: 55, type: 'functional', keyCode: 'ControlLeft', name: 'Ctrl', structure: '<div class="key key-fun ctrl"></div>',
   },
   {
-    keyCode: 'MetaLeft', en: 'Win', enS: 'Win', enC: 'Win', ru: 'Win', ruS: 'Win', ruC: 'Win', structure: '<div class="key key-fun"></div>',
+    position: 56, type: 'functional', keyCode: 'MetaLeft', name: 'Win', structure: '<div class="key key-fun"></div>',
   },
   {
-    keyCode: 'AltLeft', en: 'Alt', enS: 'Alt', enC: 'Alt', ru: 'Alt', ruS: 'Alt', ruC: 'Alt', structure: '<div class="key key-fun"></div>',
+    position: 57, type: 'functional', keyCode: 'AltLeft', name: 'Alt', structure: '<div class="key key-fun"></div>',
   },
   {
-    keyCode: 'Space', en: '', enS: '', enC: '', ru: '', ruS: '', ruC: '', structure: '<div class="key space"></div>',
+    position: 58, type: 'not-functional', keyCode: 'Space', en: [' ', ' ', ' ', ' '], ru: [' ', ' ', ' ', ' '], structure: '<div class="key space"></div>',
   },
   {
-    keyCode: 'AltRight', en: 'Alt', enS: 'Alt', enC: 'Alt', ru: 'Alt', ruS: 'Alt', ruC: 'Alt', structure: '<div class="key key-fun"></div>',
+    position: 59, type: 'functional', keyCode: 'AltRight', name: 'Alt', structure: '<div class="key key-fun"></div>',
   },
   {
-    keyCode: 'ControlRight', en: 'Ctrl', enS: 'Ctrl', enC: 'Ctrl', ru: 'Ctrl', ruS: 'Ctrl', ruC: 'Ctrl', structure: '<div class="key key-fun ctrl"></div>',
+    position: 60, type: 'functional', keyCode: 'ControlRight', name: 'Ctrl', structure: '<div class="key key-fun ctrl"></div>',
   },
   {
-    keyCode: 'ArrowLeft', en: '&#9668', enS: '&#9668', enC: '&#9668', ru: '&#9668', ruS: '&#9668', ruC: '&#9668', structure: '<div class="key key-fun"></div>',
+    position: 61, type: 'functional', keyCode: 'ArrowLeft', name: '&#9668', structure: '<div class="key key-fun"></div>',
   },
   {
-    keyCode: 'ArrowDown', en: '&#9660', enS: '&#9660', enC: '&#9660', ru: '&#9660', ruS: '&#9660', ruC: '&#9660', structure: '<div class="key key-fun"></div>',
+    position: 62, type: 'functional', keyCode: 'ArrowDown', name: '&#9660', structure: '<div class="key key-fun"></div>',
   },
   {
-    keyCode: 'ArrowRight', en: '&#9658', enS: '&#9658', enC: '&#9658', ru: '&#9658', ruS: '&#9658', ruC: '&#9658', structure: '<div class="key key-fun"></div>',
+    position: 63, type: 'functional', keyCode: 'ArrowRight', name: '&#9658', structure: '<div class="key key-fun"></div>',
   }],
 ];

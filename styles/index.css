@@ -215,20 +215,18 @@ html {
   color: #fff;
   border-radius: 0.3rem;
   background-color: rgb(116, 114, 114);
-}
-
-.key:hover {
-  background-color: #496855;
-}
-
-.key_active {
-  border-radius: 2rem;
-  background-color: #4deb89;
+  transition: 0.2s;
 }
 
 .key-fun {
   background-color: #444444;
   color: #ddd6d6;
+  transition: 0.2s;
+}
+
+.key_active {
+  border-radius: 2rem;
+  background-color: #4deb89;
 }
 
 .backspace,

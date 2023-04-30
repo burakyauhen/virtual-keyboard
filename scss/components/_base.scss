@@ -39,11 +39,14 @@ html {
     font-size: 1.8rem;
     color: #fff;
     border-radius: 0.3rem;
-    background-color: rgb(116, 114, 114);        
+    background-color: rgb(116, 114, 114);  
+    transition: 0.2s;      
 }
 
-.key:hover {
-    background-color: #496855;
+.key-fun {
+    background-color: #444444;
+    color:#ddd6d6;
+    transition: 0.2s;      
 }
 
 .key_active{
@@ -51,17 +54,11 @@ html {
     background-color: #4deb89;
 }
 
-.key-fun {
-    background-color: #444444;
-    color:#ddd6d6;
-}
-
 .backspace,
 .shift-left,
 .capslock {
     width: 10rem;
 }
-
 
 .tab {
     width: 6rem;
