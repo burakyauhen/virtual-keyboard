@@ -1,4 +1,4 @@
-/* global keys */
+import keys from './keys.js';
 
 let language = 'en';
 let keySymbol = 0;
@@ -12,7 +12,7 @@ body.insertAdjacentHTML('afterbegin', '<textarea name="area" id="screen" autofoc
 const keyboard = document.querySelector('.keyboard');
 const textArea = document.querySelector('#screen');
 
-function createKeyboard(keys) {
+function createKeyboard() {
   for (let arr = 0; arr < keys.length; arr += 1) {
     keyboard.insertAdjacentHTML('beforeend', '<div class="row"></div>');
     const row = keyboard.lastElementChild;
@@ -56,6 +56,12 @@ function feelKeyboard() {
     }
   }
 }
+
+body.insertAdjacentHTML('beforeend', `<div class="description">
+    <p>Клавиатура создана в операционной системе Windows</p>
+    <p>Для переключения языка комбинация: левыe ctrl + alt</p>
+    <p>Возможности ES6+:  - Стрелочные функции; - Модули (импорт, экспорт); - let и const.</p></div>
+`);
 
 function setLocalStoragelanguage() {
   localStorage.setItem('language', [language]);
@@ -172,10 +178,23 @@ function unPushKey(event) {
 function pushMouseKey(event) {
   const div = event.target.closest('.key');
   if (!div) return;
-  highlightKey(div);
   const position = Array.from(virtualKeys).findIndex((item) => item === div);
   const key = findMouseKey(position);
-  printKey(key);
+  if (key.keyCode !== 'ShiftLeft' && key.keyCode !== 'ShiftRight') {
+    highlightKey(div);
+    printKey(key);
+  }
+  if (key.keyCode === 'ShiftLeft' || key.keyCode === 'ShiftRight') {
+    if (shift === false) {
+      switchOnKey(key.position);
+      shift = !shift;
+    } else {
+      switchOffKey(key.position);
+      shift = !shift;
+    }
+    chooseSymbolColumn();
+    feelKeyboard();
+  }
 }
 
 function switchLanguage(event) {
