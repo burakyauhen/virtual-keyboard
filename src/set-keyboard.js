@@ -5,7 +5,8 @@ let keySymbol = 0;
 let shift = false;
 let capsLock = false;
 
-const body = document.querySelector('.body');
+const body = document.querySelector('body');
+body.classList.add('.body');
 
 body.insertAdjacentHTML('afterbegin', '<textarea name="area" id="screen" autofocus></textarea><div class="keyboard"></div');
 const keyboard = document.querySelector('.keyboard');
@@ -116,12 +117,36 @@ function implementFunctionalKey(key) {
     chooseSymbolColumn();
     feelKeyboard();
   }
+  if (key.keyCode === 'Enter') {
+    textArea.setRangeText('\n', textArea.selectionStart, textArea.selectionStart, 'end');
+  }
+  if (key.keyCode === 'Tab') {
+    textArea.setRangeText('    ', textArea.selectionStart, textArea.selectionStart, 'end');
+  }
+  if (key.keyCode === 'Delete') {
+    textArea.setRangeText('', textArea.selectionStart, textArea.selectionStart + 1, 'end');
+  }
+  if (key.keyCode === 'Backspace' && textArea.value.length > 0) {
+    textArea.setRangeText('', textArea.selectionStart - 1, textArea.selectionStart, 'end');
+  }
+  if (key.keyCode === 'ArrowLeft') {
+    textArea.setRangeText('◄', textArea.selectionStart, textArea.selectionStart, 'end');
+  }
+  if (key.keyCode === 'ArrowRight') {
+    textArea.setRangeText('►', textArea.selectionStart, textArea.selectionStart, 'end');
+  }
+  if (key.keyCode === 'ArrowUp') {
+    textArea.setRangeText('▲', textArea.selectionStart, textArea.selectionStart, 'end');
+  }
+  if (key.keyCode === 'ArrowDown') {
+    textArea.setRangeText('▼', textArea.selectionStart, textArea.selectionStart, 'end');
+  }
 }
 
 function printKey(key) {
   switchOnKey(key.position);
   if (key.type === 'not-functional') {
-    textArea.value += key[language][keySymbol];
+    textArea.setRangeText(key[language][keySymbol], textArea.selectionStart, textArea.selectionEnd, 'end');
   }
   if (key.type === 'functional') {
     implementFunctionalKey(key);
@@ -135,7 +160,6 @@ function pushKey(event) {
 }
 
 function unPushKey(event) {
-  event.preventDefault();
   if (event.key === 'Shift') {
     shift = false;
     chooseSymbolColumn();

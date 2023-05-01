@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const keys = [
   [{
     position: 0, type: 'not-functional', keyCode: 'Backquote', en: ['`', '~', '`', '~'], ru: ['ё', 'Ё', 'Ё', 'ё'], structure: '<div class="key"></div>',
